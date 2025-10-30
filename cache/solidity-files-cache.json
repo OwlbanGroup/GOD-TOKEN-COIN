@@ -9,9 +9,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -39,41 +43,6 @@
         "AIVerifier"
       ]
     },
-    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\security\\ReentrancyGuard.sol": {
-      "lastModificationDate": 1761771517865,
-      "contentHash": "1535f8c0c68463f8c1b5239f7584e71f",
-      "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ReentrancyGuard"
-      ]
-    },
     "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
       "lastModificationDate": 1761771517837,
       "contentHash": "5a20b2cad87ddb61c7a3a6af21289e28",
@@ -82,9 +51,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -111,6 +84,45 @@
         "Ownable"
       ]
     },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\security\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1761771517865,
+      "contentHash": "1535f8c0c68463f8c1b5239f7584e71f",
+      "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
     "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
       "lastModificationDate": 1761771516896,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
@@ -119,9 +131,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -146,6 +162,173 @@
         "Context"
       ]
     },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumAISecurity.sol": {
+      "lastModificationDate": 1761780565716,
+      "contentHash": "8fa3c0cde8b09ec42d38ba62ba105ffe",
+      "sourceName": "contracts/QuantumAISecurity.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./QuantumSafeCrypto.sol",
+        "./QuantumAIVerifier.sol",
+        "./QuantumConsensus.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "QuantumAISecurity"
+      ]
+    },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumAIVerifier.sol": {
+      "lastModificationDate": 1761780413225,
+      "contentHash": "bad0f170a393298a2f57b932e373092f",
+      "sourceName": "contracts/QuantumAIVerifier.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./QuantumSafeCrypto.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "QuantumAIVerifier"
+      ]
+    },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumSafeCrypto.sol": {
+      "lastModificationDate": 1761773983183,
+      "contentHash": "ce392b6a4d080b55d08fb7658964986a",
+      "sourceName": "contracts/QuantumSafeCrypto.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "QuantumSafeCrypto"
+      ]
+    },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumConsensus.sol": {
+      "lastModificationDate": 1761780395321,
+      "contentHash": "e6709ed3cf2cefeac0406f21befb8d89",
+      "sourceName": "contracts/QuantumConsensus.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./QuantumSafeCrypto.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "QuantumConsensus"
+      ]
+    },
     "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
       "lastModificationDate": 1761771517078,
       "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
@@ -154,9 +337,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -193,9 +380,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -228,9 +419,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -265,9 +460,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -304,9 +503,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -335,6 +538,187 @@
         "GodToken"
       ]
     },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumGodToken.sol": {
+      "lastModificationDate": 1761780291530,
+      "contentHash": "9081ad4002b6964db76c395ddee83bc6",
+      "sourceName": "contracts/QuantumGodToken.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GodToken.sol",
+        "./QuantumSafeCrypto.sol",
+        "./QuantumConsensus.sol",
+        "./QuantumAIVerifier.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "QuantumGodToken"
+      ]
+    },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumAINetwork.sol": {
+      "lastModificationDate": 1761776212312,
+      "contentHash": "5d62a33ec508694bc7849fd23fe0cfb8",
+      "sourceName": "contracts/QuantumAINetwork.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./QuantumSafeCrypto.sol",
+        "./QuantumConsensus.sol",
+        "./QuantumAIVerifier.sol",
+        "./QuantumGodToken.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "QuantumAINetwork"
+      ]
+    },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumAIContent.sol": {
+      "lastModificationDate": 1761776350949,
+      "contentHash": "16e6a930ebd04039b1cd0b460ce46851",
+      "sourceName": "contracts/QuantumAIContent.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./QuantumSafeCrypto.sol",
+        "./QuantumAIVerifier.sol",
+        "./QuantumGodToken.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "QuantumAIContent"
+      ]
+    },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumAICompute.sol": {
+      "lastModificationDate": 1761776175637,
+      "contentHash": "08bbcabcdb1bfc10b65e385c6e3efbd3",
+      "sourceName": "contracts/QuantumAICompute.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./QuantumSafeCrypto.sol",
+        "./QuantumConsensus.sol",
+        "./QuantumAIVerifier.sol",
+        "./QuantumGodToken.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "QuantumAICompute"
+      ]
+    },
     "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol": {
       "lastModificationDate": 1761771517145,
       "contentHash": "95602b04f0b53f1139f4668d123ddeb7",
@@ -343,9 +727,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -378,41 +766,6 @@
         "ERC721"
       ]
     },
-    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
-      "lastModificationDate": 1761771516862,
-      "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
-      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.1"
-      ],
-      "artifacts": [
-        "Address"
-      ]
-    },
     "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
       "lastModificationDate": 1761771517907,
       "contentHash": "48686fc32a22a3754b8e63321857dd2a",
@@ -421,9 +774,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -451,6 +808,45 @@
         "Strings"
       ]
     },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1761771516862,
+      "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
     "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
       "lastModificationDate": 1761771517030,
       "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
@@ -459,9 +855,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -496,9 +896,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -525,41 +929,6 @@
         "IERC721Metadata"
       ]
     },
-    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721Receiver.sol": {
-      "lastModificationDate": 1761771517732,
-      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC721Receiver"
-      ]
-    },
     "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721.sol": {
       "lastModificationDate": 1761771517713,
       "contentHash": "48de4c9a3a4ae5ef66a2aa620843413f",
@@ -568,9 +937,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -597,17 +970,21 @@
         "IERC721"
       ]
     },
-    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\utils\\math\\Math.sol": {
-      "lastModificationDate": 1761771517824,
-      "contentHash": "fe63409d8a06818b926cf89e0ea88b1b",
-      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721Receiver.sol": {
+      "lastModificationDate": 1761771517732,
+      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -629,7 +1006,7 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "Math"
+        "IERC721Receiver"
       ]
     },
     "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\utils\\math\\SignedMath.sol": {
@@ -640,9 +1017,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -667,6 +1048,45 @@
         "SignedMath"
       ]
     },
+    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\utils\\math\\Math.sol": {
+      "lastModificationDate": 1761771517824,
+      "contentHash": "fe63409d8a06818b926cf89e0ea88b1b",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
     "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
       "lastModificationDate": 1761771517482,
       "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
@@ -675,9 +1095,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -710,9 +1134,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -749,9 +1177,13 @@
         "version": "0.8.19",
         "settings": {
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 200,
+            "details": {
+              "yul": true
+            }
           },
+          "viaIR": true,
           "outputSelection": {
             "*": {
               "*": [
@@ -774,156 +1206,6 @@
       ],
       "artifacts": [
         "Counters"
-      ]
-    },
-    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumGodToken.sol": {
-      "lastModificationDate": 1761774041479,
-      "contentHash": "ddd013dad40dacbba3532ddcaeb42196",
-      "sourceName": "contracts/QuantumGodToken.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./GodToken.sol",
-        "./QuantumSafeCrypto.sol",
-        "./QuantumConsensus.sol",
-        "./QuantumAIVerifier.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "QuantumGodToken"
-      ]
-    },
-    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumSafeCrypto.sol": {
-      "lastModificationDate": 1761773983183,
-      "contentHash": "ce392b6a4d080b55d08fb7658964986a",
-      "sourceName": "contracts/QuantumSafeCrypto.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "QuantumSafeCrypto"
-      ]
-    },
-    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumConsensus.sol": {
-      "lastModificationDate": 1761774006302,
-      "contentHash": "5a700ea5efaa86d0b0fc72206ffe02b1",
-      "sourceName": "contracts/QuantumConsensus.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./QuantumSafeCrypto.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "QuantumConsensus"
-      ]
-    },
-    "C:\\Users\\bsean\\OneDrive\\Apps\\GOD-TOKEN-COIN\\contracts\\QuantumAIVerifier.sol": {
-      "lastModificationDate": 1761774029382,
-      "contentHash": "66203d08a350203af18b223b2ac51949",
-      "sourceName": "contracts/QuantumAIVerifier.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./QuantumSafeCrypto.sol",
-        "@openzeppelin/contracts/access/Ownable.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "QuantumAIVerifier"
       ]
     }
   }

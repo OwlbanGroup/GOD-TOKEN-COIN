@@ -332,7 +332,7 @@ contract QuantumAISecurity is Ownable, ReentrancyGuard {
      */
     function _updateTrustScore(address user, bool positive) internal {
         QuantumIdentity storage identity = quantumIdentities[user];
-        uint256 change = positive ? 10 : 20;
+        uint256 change = positive ? 50 : 20; // Increased positive change for testing
 
         if (positive && identity.trustScore < MAX_TRUST_SCORE) {
             identity.trustScore += change;

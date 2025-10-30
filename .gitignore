@@ -1,0 +1,10 @@
+node_modules
+.env
+.env.local
+.env.production
+artifacts/
+cache/
+deployment.json
+quantum_simulation_state.json
+*.log
+.DS_Store

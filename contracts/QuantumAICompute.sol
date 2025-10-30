@@ -354,7 +354,7 @@ contract QuantumAICompute is Ownable, ReentrancyGuard {
     /**
      * @dev Get compute network statistics
      */
-    function getComputeStats() external view returns (
+    function getComputeStats() external pure returns (
         uint256 totalNodes,
         uint256 activeNodes,
         uint256 totalComputingPower,

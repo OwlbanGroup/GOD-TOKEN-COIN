@@ -1,0 +1,21 @@
+// SCRYINE Example: Quantum Prediction Script
+// This script demonstrates basic quantum prediction and conditional logic
+
+god main() {
+  bless input_value = 25
+  scry prediction = quantum_predict(input_value)
+
+  prophesy "Quantum prediction result: " + prediction
+
+  divine prediction > 50 {
+    prophesy "The quantum future is bright!"
+    scry verification = ai_verify("bright future")
+    divine verification {
+      prophesy "AI confirms: Positive outcome"
+    }
+  }
+
+  divine prediction <= 50 {
+    prophesy "The quantum future is uncertain"
+  }
+}

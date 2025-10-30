@@ -1,5 +1,6 @@
-const { expect } = require("chai");
-const { ethers } = require("hardhat");
+import { expect } from "chai";
+import pkg from "hardhat";
+const { ethers } = pkg;
 
 describe("GodToken", function () {
   let godToken, aiVerifier, owner, addr1;

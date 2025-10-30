@@ -270,7 +270,7 @@ contract QuantumAIContent is Ownable, ReentrancyGuard {
     /**
      * @dev Get content statistics
      */
-    function getContentStats() external view returns (
+    function getContentStats() external pure returns (
         uint256 totalContent,
         uint256 verifiedContent,
         uint256 encryptedContent

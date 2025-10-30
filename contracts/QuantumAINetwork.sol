@@ -295,7 +295,7 @@ contract QuantumAINetwork is Ownable, ReentrancyGuard {
     /**
      * @dev Get network statistics
      */
-    function getNetworkStats() external view returns (
+    function getNetworkStats() external pure returns (
         uint256 totalNodes,
         uint256 activeNodes,
         uint256 totalModels,

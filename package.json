@@ -4,7 +4,14 @@
   "description": "GOD COIN",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx hardhat test",
+    "test:watch": "npx hardhat test --watch",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.mjs",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.mjs --network sepolia",
+    "deploy:polygon": "npx hardhat run scripts/deploy.mjs --network polygon",
+    "scryine": "node scryine/interpreter.cjs",
+    "clean": "npx hardhat clean"
   },
   "repository": {
     "type": "git",

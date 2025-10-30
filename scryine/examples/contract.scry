@@ -1,0 +1,24 @@
+// SCRYINE Example: Smart Contract Interaction
+// This script shows how to interact with GOD token contracts
+
+god main() {
+  bless contract_address = "0x1234567890abcdef"
+  bless amount = 1000
+
+  scry result = contract_call("GodToken", "transfer", contract_address, amount)
+  prophesy "Contract call result: " + result
+
+  divine amount > 500 {
+    prophesy "Large transfer detected"
+    scry verify = ai_verify("large transfer")
+    divine verify {
+      prophesy "AI verification passed for large transfer"
+    }
+  }
+}
+
+god custom_function(value) {
+  bless doubled = value * 2
+  prophesy "Custom function result: " + doubled
+  bless returnValue = doubled
+}

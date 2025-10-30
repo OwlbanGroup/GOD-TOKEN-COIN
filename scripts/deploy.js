@@ -1,6 +1,5 @@
-const pkg = require("hardhat");
-const { ethers } = pkg;
-const fs = require("node:fs");
+import { ethers } from "hardhat";
+import fs from "node:fs";
 
 async function main() {
   console.log("Deploying GOD-TOKEN-COIN contracts...");

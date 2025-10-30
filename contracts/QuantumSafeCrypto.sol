@@ -8,15 +8,15 @@ pragma solidity ^0.8.0;
  */
 library QuantumSafeCrypto {
     // Dilithium parameters (simplified for Solidity)
-    uint256 constant public DILITHIUM_N = 256;
-    uint256 constant public DILITHIUM_Q = 8380417; // 2^23 * 761 + 1
-    uint256 constant public DILITHIUM_D = 13;
-    uint256 constant public DILITHIUM_K = 4;
-    uint256 constant public DILITHIUM_L = 4;
+    uint256 public constant DILITHIUM_N = 256;
+    uint256 public constant DILITHIUM_Q = 8380417; // 2^23 * 761 + 1
+    uint256 public constant DILITHIUM_D = 13;
+    uint256 public constant DILITHIUM_K = 4;
+    uint256 public constant DILITHIUM_L = 4;
 
     // XMSS parameters
-    uint256 constant public XMSS_HEIGHT = 10;
-    uint256 constant public XMSS_N = 32; // SHA-256 output size
+    uint256 public constant XMSS_HEIGHT = 10;
+    uint256 public constant XMSS_N = 32; // SHA-256 output size
 
     struct DilithiumKeyPair {
         uint256[4] publicKey;  // Simplified public key

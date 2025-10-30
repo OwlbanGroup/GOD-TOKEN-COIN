@@ -28,7 +28,7 @@ export default {
         enabled: true,
         runs: 200,
         details: {
-          yul: false,
+          yul: true,
         },
       },
       viaIR: true,
@@ -40,12 +40,15 @@ export default {
     },
     // sepolia: {
     //   url: process.env.SEPOLIA_URL || "",
-    //   accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    //   accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
     // },
     // polygon: {
     //   url: process.env.POLYGON_URL || "",
-    //   accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    //   accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
     // }
+  },
+  mocha: {
+    timeout: 40000
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
