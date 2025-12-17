@@ -6,8 +6,8 @@ describe("SaintRelicsNFT", function () {
     let owner;
     let addr1;
     let addr2;
-    const houseOfDavidFlag = "0x486f757365206f662044617669642053656e696f72204c696e65616765";
-    const debtProof = "0x7661746963616e2d64656274207075726368617365207265636f7264";
+    const houseOfDavidFlag = ethers.utils.formatBytes32String("HouseOfDavidSenior");
+    const debtProof = ethers.utils.formatBytes32String("VaticanDebtProof");
 
     beforeEach(async function () {
         [owner, addr1, addr2] = await ethers.getSigners();
@@ -33,7 +33,7 @@ describe("SaintRelicsNFT", function () {
 
     describe("House of David Flag", function () {
         it("Should register House of David Flag", async function () {
-            const newFlag = "0x486f757365206f662044617669642041706f73746f6c6963204c696e65";
+            const newFlag = ethers.utils.formatBytes32String("HouseOfDavidApostolic");
             await saintRelicsNFT.registerHouseOfDavidFlag(newFlag);
             expect(await saintRelicsNFT.houseOfDavidFlags(newFlag)).to.be.true;
         });

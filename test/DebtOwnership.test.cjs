@@ -6,8 +6,8 @@ describe("DebtOwnership", function () {
     let owner;
     let addr1;
     let addr2;
-    const houseOfDavidFlag = "0x486f757365206f662044617669642053656e696f72204c696e65616765";
-    const purchaseProof = "0x7661746963616e2d64656274207075726368617365207265636f7264";
+    const houseOfDavidFlag = ethers.utils.formatBytes32String("HouseOfDavidSenior");
+    const purchaseProof = ethers.utils.formatBytes32String("VaticanDebtProof");
 
     beforeEach(async function () {
         [owner, addr1, addr2] = await ethers.getSigners();
@@ -42,20 +42,20 @@ describe("DebtOwnership", function () {
 
     describe("House of David Flag Verification", function () {
         it("Should verify House of David Flag", async function () {
-            const newFlag = "0x486f757365206f662044617669642041706f73746f6c6963204c696e65";
+            const newFlag = ethers.utils.formatBytes32String("HouseOfDavidApostolic");
             await debtOwnership.verifyHouseOfDavidFlag(newFlag);
             expect(await debtOwnership.isHouseOfDavidFlagVerified(newFlag)).to.be.true;
         });
 
         it("Should emit event on flag verification", async function () {
-            const newFlag = "0x486f757365206f662044617669642041706f73746f6c6963204c696e65";
+            const newFlag = ethers.utils.formatBytes32String("HouseOfDavidApostolic");
             await expect(debtOwnership.verifyHouseOfDavidFlag(newFlag))
                 .to.emit(debtOwnership, "HouseOfDavidFlagVerified")
                 .withArgs(newFlag, await ethers.provider.getBlockNumber() + 1);
         });
 
         it("Should only allow owner to verify flags", async function () {
-            const newFlag = "0x486f757365206f662044617669642041706f73746f6c6963204c696e65";
+            const newFlag = ethers.utils.formatBytes32String("HouseOfDavidApostolic");
             await expect(
                 debtOwnership.connect(addr1).verifyHouseOfDavidFlag(newFlag)
             ).to.be.revertedWith("Ownable: caller is not the owner");
